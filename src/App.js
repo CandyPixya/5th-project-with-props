@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Card from "./pages/Card/Card";
+import flower from "./pages/Media/flower.jpg"
+import earth from "./pages/Media/earth.jpg"
+import pinky from "./pages/Media/pinky.jpg"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card
+        img={flower}
+        rating="5.0"
+        reviewCount={6}
+        country="USA"
+        title="Life lessons with CandyPixya"
+        price={136}
+      />
+      <Card
+        img={earth}
+        rating="4.0"
+        reviewCount={10}
+        country="Space"
+        title="I Know You"
+        price={200}
+      />
+      <Card
+        img={pinky}
+        rating="5.0"
+        reviewCount={6}
+        country="USA"
+        title="Make the world pink"
+        price={136}
+      />
+    </>
   );
 }
 
